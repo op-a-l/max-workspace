@@ -2,8 +2,8 @@
 	"name" : "max-workspace",
 	"version" : 1,
 	"creationdate" : 3836668067,
-	"modificationdate" : 3836749798,
-	"viewrect" : [ 34.0, 98.0, 300.0, 500.0 ],
+	"modificationdate" : 3836913690,
+	"viewrect" : [ 1552.0, 65.0, 367.0, 932.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -17,6 +17,11 @@
 			}
 ,
 			"tester.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"droneMachine.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
