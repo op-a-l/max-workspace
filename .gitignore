@@ -1,3 +1,4 @@
 /static/*
 !/static/*.gitkeep
 /builds
+/_DeletedItems
