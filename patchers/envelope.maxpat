@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 35.0, 85.0, 1481.0, 905.0 ],
+		"rect" : [ 807.0, 85.0, 678.0, 912.0 ],
 		"openinpresentation" : 1,
 		"default_fontface" : 1,
 		"default_fontname" : "Roboto Mono",
@@ -19,12 +19,49 @@
 		"integercoordinates" : 1,
 		"boxes" : [ 			{
 				"box" : 				{
+					"attr" : "mode",
+					"id" : "obj-24",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 120.0, 446.0, 150.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"filename" : "chansManager.js",
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 469.0, 455.0, 117.0, 24.0 ],
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 0
+					}
+,
+					"text" : "v8 chansManager",
+					"textfile" : 					{
+						"filename" : "chansManager.js",
+						"flags" : 0,
+						"embed" : 0,
+						"autowatch" : 1
+					}
+
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-15",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 407.0, 181.0, 73.0, 23.0 ],
+					"patching_rect" : [ 210.0, 183.0, 88.0, 24.0 ],
 					"text" : "patcherargs"
 				}
 
@@ -48,7 +85,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "setvalue", "int" ],
-					"patching_rect" : [ 360.0, 645.0, 155.0, 23.0 ],
+					"patching_rect" : [ 360.0, 645.0, 155.0, 24.0 ],
 					"text" : "mc.target"
 				}
 
@@ -60,26 +97,17 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "multichannelsignal", "", "" ],
-					"patching_rect" : [ 360.0, 688.0, 154.0, 23.0 ],
+					"patching_rect" : [ 360.0, 688.0, 154.0, 24.0 ],
 					"text" : "mc.curve~"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"chans" : 4,
 					"classic_curve" : 1,
+					"clickadd" : 0,
 					"data" : [ 						{
 							"addpoints_with_curve" : [ 0.0, 0.0, 0, 0.0, 333.53027194104294, 1.0, 0, 0.0, 1000.0, 0.0, 0, 0.0 ]
-						}
-, 						{
-
-						}
-, 						{
-
-						}
-, 						{
-
 						}
  ],
 					"id" : "obj-54",
@@ -115,7 +143,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 515.0, 292.0, 129.0, 23.0 ],
+					"patching_rect" : [ 571.0, 293.0, 167.0, 24.0 ],
 					"text" : "print warning @level 1"
 				}
 
@@ -127,7 +155,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 515.0, 264.0, 153.0, 23.0 ],
+					"patching_rect" : [ 571.0, 265.0, 196.0, 24.0 ],
 					"text" : "prepend invalid argument :"
 				}
 
@@ -151,7 +179,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 6,
 					"outlettype" : [ "", "", "", "", "", "" ],
-					"patching_rect" : [ 315.0, 225.0, 219.0, 23.0 ],
+					"patching_rect" : [ 315.0, 225.0, 275.0, 24.0 ],
 					"text" : "route setdomain float bang chans done"
 				}
 
@@ -163,7 +191,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 796.0, 60.0, 195.0, 35.0 ],
+					"patching_rect" : [ 796.0, 60.0, 239.0, 38.0 ],
 					"text" : "- This module takes a bang as an input. It triggers the envelope. ",
 					"textcolor" : [ 0.129411764705882, 0.0, 0.0, 1.0 ]
 				}
@@ -176,7 +204,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 780.0, 105.0, 150.0, 21.0 ],
+					"patching_rect" : [ 780.0, 105.0, 150.0, 22.0 ],
 					"text" : "Output",
 					"textcolor" : [ 0.129411764705882, 0.0, 0.0, 1.0 ]
 				}
@@ -190,7 +218,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 795.0, 133.0, 195.0, 21.0 ],
+					"patching_rect" : [ 795.0, 133.0, 239.0, 22.0 ],
 					"text" : "- It outputs its curves on bang.",
 					"textcolor" : [ 0.129411764705882, 0.0, 0.0, 1.0 ]
 				}
@@ -203,7 +231,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 781.0, 30.0, 150.0, 21.0 ],
+					"patching_rect" : [ 781.0, 30.0, 150.0, 22.0 ],
 					"text" : "Input",
 					"textcolor" : [ 0.129411764705882, 0.0, 0.0, 1.0 ]
 				}
@@ -216,7 +244,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 315.0, 274.0, 95.0, 23.0 ],
+					"patching_rect" : [ 315.0, 274.0, 95.0, 24.0 ],
 					"text" : "setdomain $1"
 				}
 
@@ -230,21 +258,21 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 765.0, 15.0, 240.0, 165.0 ],
+					"patching_rect" : [ 765.0, 15.0, 285.0, 165.0 ],
 					"proportion" : 0.5
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"attr" : "chans",
-					"id" : "obj-59",
+					"attr" : "clickadd",
+					"id" : "obj-23",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 510.0, 451.0, 150.0, 23.0 ]
+					"patching_rect" : [ 120.0, 420.0, 150.0, 24.0 ]
 				}
 
 			}
@@ -260,6 +288,29 @@
 				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
 					"source" : [ "obj-15", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 0 ],
+					"order" : 0,
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-54", 0 ],
+					"order" : 1,
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-22", 3 ]
 				}
 
 			}
@@ -294,8 +345,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-59", 0 ],
-					"source" : [ "obj-22", 3 ]
+					"destination" : [ "obj-54", 0 ],
+					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-54", 0 ],
+					"source" : [ "obj-24", 0 ]
 				}
 
 			}
@@ -349,25 +407,15 @@
 				}
 
 			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-26", 0 ],
-					"midpoints" : [ 519.5, 678.525424122810364, 369.5, 678.525424122810364 ],
-					"order" : 0,
-					"source" : [ "obj-59", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-54", 0 ],
-					"order" : 1,
-					"source" : [ "obj-59", 0 ]
-				}
-
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "chansManager.js",
+				"bootpath" : "~/DEV/Max-workspace/scripts",
+				"patcherrelativepath" : "../scripts",
+				"type" : "TEXT",
+				"implicit" : 1
 			}
  ],
-		"dependency_cache" : [  ],
 		"autosave" : 0
 	}
 
